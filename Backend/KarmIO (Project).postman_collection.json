@@ -1,0 +1,2165 @@
+{
+	"info": {
+		"_postman_id": "cb11b9bc-ac18-4d8e-b23b-f129f5ea77e5",
+		"name": "KarmIO (Project)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46100364",
+		"_collection_link": "https://paarthgilhotra.postman.co/workspace/Paarth-Gilhotra's-Workspace~cc6e682c-55fe-4762-86c7-566296bb3720/collection/46100364-cb11b9bc-ac18-4d8e-b23b-f129f5ea77e5?action=share&source=collection_link&creator=46100364"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "add Category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Desgining",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Designing the poster and app and website",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/category/add",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"category",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll Category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/category/getAll",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"category",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingle Category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6879e195d57716a1e4d7f470",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/category/getSingle",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"category",
+								"getSingle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6879e195d57716a1e4d7f470",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Graphic Designing",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/category/update",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"category",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6879e195d57716a1e4d7f470",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/category/delete",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"category",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changeStatus Category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6873aedf7fd844a17e6e2085",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/category/changeStatus",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"category",
+								"changeStatus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SubCategory",
+			"item": [
+				{
+					"name": "add SubCategory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Test the Project",
+									"type": "text"
+								},
+								{
+									"key": "categoryId",
+									"value": "6873aedf7fd844a17e6e2085",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/subCategory/add",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"subCategory",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll SubCategory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/subCategory/getAll",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"subCategory",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingle SubCategory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6879e3f2979c251b4462fff3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/subCategory/getSingle",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"subCategory",
+								"getSingle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update SubCategory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6879e3f2979c251b4462fff3",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Testing the whole project ",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/subCategory/update",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"subCategory",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete SubCategory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6877bff347b469ffff8561ad",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "develop front end",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "this category is of develop fornt end",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/subCategory/delete",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"subCategory",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changeStatus SubCategory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6873ae1a13081bb25b38447d",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/subCategory/changeStatus",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"subCategory",
+								"changeStatus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Project",
+			"item": [
+				{
+					"name": "add Project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "{{adminToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "develop website",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Develop a Employee task Website",
+									"type": "text"
+								},
+								{
+									"key": "attachment",
+									"type": "file",
+									"src": "/C:/Users/paart/OneDrive/Documents/cec assignment.pdf"
+								},
+								{
+									"key": "client",
+									"value": "abc company",
+									"type": "text"
+								},
+								{
+									"key": "technology",
+									"value": "React and Node js",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/project/add",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"project",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll Projects",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/project/getAll",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"project",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingle Project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6877c2c97c870974a1b2b2f1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/project/getSingle",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"project",
+								"getSingle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6877c2c97c870974a1b2b2f1",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Employee Management Software",
+									"type": "text"
+								},
+								{
+									"key": "attachment",
+									"value": "file.jpg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/project/update",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"project",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6873ae1a13081bb25b38447d",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "develop front end",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "this category is of develop fornt end",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/project/delete",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"project",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changeStatus Project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6877c2c97c870974a1b2b2f1",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/project/changeStatus",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"project",
+								"changeStatus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Project Team",
+			"item": [
+				{
+					"name": "add Project  Team",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "projectId",
+									"value": "6877c2c97c870974a1b2b2f1",
+									"type": "text"
+								},
+								{
+									"key": "employeeId",
+									"value": "6877be92c3393ecaf3a950c7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/projectTeam/add",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"projectTeam",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll Project Team",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/projectTeam/getAll",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"projectTeam",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingle Project Team",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6877e8a18d241511f7c851b8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/projectTeam/getSingle",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"projectTeam",
+								"getSingle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Project Team",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6877e8a18d241511f7c851b8",
+									"type": "text"
+								},
+								{
+									"key": "employeeId",
+									"value": "6877e9d38b37a6dfd69560b7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/projectTeam/update",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"projectTeam",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Project team",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6877e8a18d241511f7c851b8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/projectTeam/delete",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"projectTeam",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changeStatus Project Team",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6877e8a18d241511f7c851b8",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "false",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/projectTeam/changeStatus",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"projectTeam",
+								"changeStatus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "add Employee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "{{adminToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Paarth",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "paarth@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "paarth@123",
+									"type": "text"
+								},
+								{
+									"key": "contact",
+									"value": "9610297544",
+									"type": "text"
+								},
+								{
+									"key": "picture",
+									"value": "pg.jpg",
+									"type": "text"
+								},
+								{
+									"key": "coins",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "2 yrs",
+									"type": "text"
+								},
+								{
+									"key": "jobTitle",
+									"value": "Intern",
+									"type": "text"
+								},
+								{
+									"key": "joiningDate",
+									"value": "17 July 2025",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/employee/add",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"employee",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll Employee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "{{adminToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/employee/getAll",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"employee",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingle Employee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6877be92c3393ecaf3a950c7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/employee/getSingle",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"employee",
+								"getSingle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Employee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6877be92c3393ecaf3a950c7",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "rishu",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/employee/update",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"employee",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Employee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "{{adminToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "68791afd4b4c3ee0e627523a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/employee/delete",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"employee",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changeStatus Employee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "68791afd4b4c3ee0e627523a",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "false",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/employee/changeStatus",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"employee",
+								"changeStatus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Submit",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "testing",
+									"type": "text"
+								},
+								{
+									"key": "categoryId",
+									"value": "68715d2b5598d81382896b8a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/submit/add",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"submit",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/submit/getAll",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"submit",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingle",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6873ab66c917460add12c804",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/submit/getSingle",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"submit",
+								"getSingle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6873ae1a13081bb25b38447d",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "html,css,js,react",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "categoryId",
+									"value": "6873aedf7fd844a17e6e2085",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/submit/update",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"submit",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6873ae1a13081bb25b38447d",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "develop front end",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "this category is of develop fornt end",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/submit/delete",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"submit",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changeStatus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6873ae1a13081bb25b38447d",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/submit/changeStatus",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"submit",
+								"changeStatus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Coin",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "testing",
+									"type": "text"
+								},
+								{
+									"key": "categoryId",
+									"value": "68715d2b5598d81382896b8a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/coin/add",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"coin",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/coin/getAll",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"coin",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingle",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6873ab66c917460add12c804",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/coin/getSingle",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"coin",
+								"getSingle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6873ae1a13081bb25b38447d",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "html,css,js,react",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "categoryId",
+									"value": "6873aedf7fd844a17e6e2085",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/submit/update",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"submit",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6873ae1a13081bb25b38447d",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "develop front end",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "this category is of develop fornt end",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/coin/delete",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"coin",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changeStatus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6873ae1a13081bb25b38447d",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/coin/changeStatus",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"coin",
+								"changeStatus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "testing",
+									"type": "text"
+								},
+								{
+									"key": "categoryId",
+									"value": "68715d2b5598d81382896b8a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/task/add",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"task",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/task/getAll",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"task",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingle",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6873ab66c917460add12c804",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/task/getSingle",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"task",
+								"getSingle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6873ae1a13081bb25b38447d",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "html,css,js,react",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "categoryId",
+									"value": "6873aedf7fd844a17e6e2085",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/task/update",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"task",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6873ae1a13081bb25b38447d",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "develop front end",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "this category is of develop fornt end",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/task/delete",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"task",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changeStatus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6873ae1a13081bb25b38447d",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/task/changeStatus",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"task",
+								"changeStatus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "paarth@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "paarth@123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/user/login",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/apis/user/changePassword",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"apis",
+								"user",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin@123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/user/login",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DashBoard",
+			"item": [
+				{
+					"name": "dashboard",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "{{adminToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Base_Url}}/admin/dashboard",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"dashboard"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
