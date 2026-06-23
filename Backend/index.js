@@ -1,6 +1,7 @@
+require("dotenv").config();
 const express=require("express")
 const app=express()
-const port=9610
+const port=process.env.PORT
 
 const seeder=require("./server/config/seeder")
 seeder.adminReg()
@@ -21,11 +22,10 @@ app.use("/apis",apiRoutes)
 
 
 
-app.listen(port,(err)=>{
-    if(err){
-        console.log("Server is not Connected");
-    }
-    else{
-        console.log("Server is Connected on port",port);  
-    }
+app.listen(port,()=>{
+    console.log("Server is Connected on port",port);  
+}).on('error',(err)=>{
+    console.log("Server is not Connected",err);
 })
+
+module.exports = app;

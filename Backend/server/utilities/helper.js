@@ -1,8 +1,8 @@
 const cloudinary=require("cloudinary").v2
 cloudinary.config({
-    cloud_name: "docm03ean",  // your cloud name
-    api_key: "872263481627173",
-    api_secret: "NgH7mIEMX5rABe5hhcKqb4ZofyU",
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,  // your cloud name
+    api_key: process.env.CLOUDINARY_API_KEY ,
+    api_secret: process.env.CLOUDINARY_API_SECRET,
     secure: true,
     cdn_subdomain: true,
 })

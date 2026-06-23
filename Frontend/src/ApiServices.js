@@ -1,5 +1,5 @@
 import axios from "axios";
-var BaseURL = "http://localhost:9610"
+var BaseURL = import.meta.env.VITE_BACKEND_BASE_URL
 
 class ApiServices {
    getToken() {
